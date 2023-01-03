@@ -24,7 +24,20 @@ function isSelfDescribing(num) {
   return true;
 }
 
-console.log(isSelfDescribing(1210)); //[1,2,1,0]
-console.log(isSelfDescribing(2020));
-console.log(isSelfDescribing(21200));
-console.log(isSelfDescribing(3211000));
+// console.log(isSelfDescribing(1210)); //[1,2,1,0]
+// console.log(isSelfDescribing(2020));
+// console.log(isSelfDescribing(21200));
+// console.log(isSelfDescribing(3211000));
+
+//Generate all self-descriptive numbers that will fit in a 32-bit integer. There are 6 such integers:
+
+function checkSelfDescribing() {
+  for (let i = 0; i < 100000; i++) {
+    if (isSelfDescribing(i) === true) {
+      console.log(i);
+    } else {
+      continue;
+    }
+  }
+}
+checkSelfDescribing();

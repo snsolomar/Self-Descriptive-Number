@@ -10,10 +10,10 @@ function isSelfDescribing(num) {
     .map((str) => Number(str));
 
   let i = 0;
-  for (const index of numArray) {
+  for (const currentIndex of numArray) {
     //check to see how times times the current index appears in the numArray
     //does that total match the current element/number for this iteration
-    if (numArray.filter((n) => n === i).length === index) {
+    if (numArray.filter((n) => n === i).length === currentIndex) {
       //incremenet i to get to the next interation of the loops
       i++;
       continue;

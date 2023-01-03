@@ -1,7 +1,4 @@
-//An integer is said to be self-descriptive if it has the property that, //
-//when digit positions are labeled 0 to N-1, the digit in each position is equal to //
-//the number of times that this digit appears in the number. Write a function that will //
-//check whether a given positive integer is self-descriptive. //
+//An integer is said to be self-descriptive if it has the property that, when digit positions are labeled 0 to N-1, the digit in each position is equal to the number of times that this digit appears in the number. Write a function that will check whether a given positive integer is self-descriptive.
 
 function isSelfDescribing(num) {
   //turn number array into a string so we can split each number into a character

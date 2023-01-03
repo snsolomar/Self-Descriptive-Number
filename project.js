@@ -6,7 +6,7 @@
 function isSelfDescribing(num) {
   //turn number array into a string so we can split each number into a character
   //map will allow us to do something to each element in the array
-  //go into the string and turn each character into a number and return it into a new array
+  //go into the string and turn each character into a number and return it into the new array
   //array will now look like [1,2,3] instead of 123
   let numArray = String(num)
     .split("")
